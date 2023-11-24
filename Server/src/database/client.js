@@ -14,7 +14,7 @@ const pgClient = async () => {
     port: process.env.MY_PORT ,
     password: process.env.MY_PASSWORD,
     database: process.env.MY_DATABASE,
-    user: process.env.MY_PASSWORD ,
+    user: process.env.MY_USER,
   });
   
 //   const pubsubs = new PostgresPubSub({connectionString: 'postgres://root:root@localhost:5000/myDB'})
