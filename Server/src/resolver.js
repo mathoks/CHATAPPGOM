@@ -24,7 +24,6 @@ var main_chat = new Object();
 var buffer = [];
 
 const pubsub = new PubSub();
-const { pubsubs } = await pgClient();
 const subscribers = [];
 const onMessageUpdates = (fn) => subscribers.push(fn);
 export const resolvers = {
