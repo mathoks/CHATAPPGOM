@@ -30,7 +30,7 @@ export var credentials = {}
 const url = "https://chat-app-go-apc4.onrender.com";
 const httpServer = http.createServer(app);
 const PORT = process.env.PORT || 4000
-const { pgPool, pubsub } = await pgClient();
+const { pgPool } = await pgClient();
 const schema = makeExecutableSchema({ typeDefs: loader, resolvers: resolvers });
 // Create our WebSocket server using the HTTP server we just set up.
 const wsServer = new WebSocketServer({
