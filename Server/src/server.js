@@ -27,7 +27,7 @@ import { GraphQLError } from "graphql";
 const { jwt_secret } = Credentials;
 export var credentials = {}
 
-const url = "http://localhost:4000";
+const url = "https://chat-app-go-apc4.onrender.com";
 const httpServer = http.createServer(app);
 const PORT = process.env.PORT || 4000
 const { pgPool, pubsub } = await pgClient();
