@@ -10,11 +10,11 @@ const CHANNEL = 'new_like'
 
 const pgClient = async () => {
   const pgPool = new pg.Pool({
-    host: process.env.MY_HOST ||  "localhost",
-    port: process.env.MY_PORT || 5000,
-    password: process.env.MY_PASSWORD||"root",
-    database: process.env.MY_DATABASE || "myDB",
-    user: process.env.MY_PASSWORD || "root",
+    host: process.env.MY_HOST ,
+    port: process.env.MY_PORT ,
+    password: process.env.MY_PASSWORD,
+    database: process.env.MY_DATABASE,
+    user: process.env.MY_PASSWORD ,
   });
   
 //   const pubsubs = new PostgresPubSub({connectionString: 'postgres://root:root@localhost:5000/myDB'})
