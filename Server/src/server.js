@@ -29,7 +29,7 @@ export var credentials = {}
 
 const url = "http://localhost:4000";
 const httpServer = http.createServer(app);
-
+const PORT = process.env.PORT || 4000
 const { pgPool, pubsub } = await pgClient();
 const schema = makeExecutableSchema({ typeDefs: loader, resolvers: resolvers });
 // Create our WebSocket server using the HTTP server we just set up.
@@ -237,7 +237,7 @@ app.use(
   })
 );
 
-await new Promise((resolve) => httpServer.listen({ port: 4000 }, resolve));
+await new Promise((resolve) => httpServer.listen({ port: PORT }, resolve));
 console.log(`
     🚀  Server is running!
     📭  Query at ${url}
