@@ -223,7 +223,6 @@ app.use(
       return {
         dataSources: {
           token,
-          pubsub,
           userCont: new userToken(req.get("x-access-token") ?? null),
           userRefresh: new getRefresh(req.get("cookie") ?? null),
           productsDb: new ProductsDataSource({ DB: pgPool, cache }),
