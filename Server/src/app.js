@@ -10,7 +10,7 @@ const app = express();
 app.use(
   "/",
   cors({
-    origin: ["https://chat-app-go-apc4.onrender.com/", "https://65618606fbcc756f19c65018--splendorous-faun-aaaf25.netlify.app"],
+    origin: ["https://chat-app-go-apc4.onrender.com/", "https://splendorous-faun-aaaf25.netlify.app"],
     credentials: true,
   }),
 
